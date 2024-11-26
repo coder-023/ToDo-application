@@ -1,0 +1,12 @@
+<app-card>
+    <article>
+        <h2>{{filteredTasks.title}}</h2>
+        <time>{{filteredTasks.dueDate | date:'fullDate'}}</time>
+        <p>{{filteredTasks.summary}}</p>
+        <p class="actions">
+            <button (click)="deleteTask(filteredTasks.id)">Complete</button>
+        </p>
+    </article>
+</app-card>
+
+
